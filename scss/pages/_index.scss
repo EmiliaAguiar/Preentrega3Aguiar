@@ -1,0 +1,796 @@
+/* Banner */
+
+.banner-princ {
+  width: 100%;
+  padding: 4%;
+  height: 350px;
+  background-image: url(/img/fondohome.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: 0%;
+
+  &__titulo {
+    color: $c-princ;
+    font-family: $ff-titulos;
+    font-weight: 600;
+    font-size: 1.8rem;
+  }
+
+  &__parrafo {
+    width: 70%;
+    font-size: 1rem;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    color: $gris-parrafos;
+    line-height: 1.5rem;
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Itinerario */
+
+.itinerario {
+  @include centrar-elemento;
+
+
+  &_titulo {
+    color: $c-princ;
+    font-family: $ff-titulos;
+    font-weight: 400;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2%;
+  }
+
+  &__contenido {
+    margin: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 1%, 3%, 1%, 3%;
+  }
+
+  &__imagen {
+    width: 90%;
+    height: 50%;
+    object-fit: fill;
+    border-radius: 70px;
+  }
+
+  &__parrafo {
+    font-size: 0.9rem;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    color: $gris-parrafos;
+    line-height: 1.5rem;
+    margin: 3%;
+    text-align: center;
+  }
+}
+
+/* Sección Hoteles */
+
+.hoteles {
+  @include centrar-elemento;
+  padding: 3% 5% 50% 5%;
+  background-color: $gris-fondo;
+  border-radius: 40px;
+
+  &__encabezado {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: top;
+    gap: 2%;
+    padding: 2%;
+    overflow: auto;
+
+    &__titulo {
+      color: $c-princ;
+      font-family: $ff-titulos;
+      font-weight: 500;
+      font-size: 2rem;
+      text-align: center;
+      flex-basis: 50%;
+      flex-grow: 2;
+      flex-shrink: 0;
+      margin-top: 2%;
+    }
+
+    &__subtitulo {
+      color: $c-secundario-v;
+      font-family: $ff-titulos;
+      font-weight: 600;
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    &__parrafo {
+      font-size: 0.8rem;
+      font-family: $ff-parrafos;
+      font-weight: 500;
+      text-align: center;
+      color: $gris-parrafos;
+      line-height: 1.5rem;
+      flex-basis: 40%;
+      flex-shrink: 0;
+      padding: 2%;
+      align-self: center;
+    }
+  }
+
+  &__destacados {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
+
+    &__tarjetas {
+      background-color: aliceblue;
+      border-radius: 30px;
+      padding: 10%;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+      box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+
+      &:hover {
+        width: 102%;
+        background-color: rgb(217, 233, 247);
+      }
+     }
+
+    &__imagen {
+      width: 100%;
+      align-self: center;
+      border-radius: 10px;
+    }
+
+    &__titulo {
+      font-size: 0.9rem;
+      font-family: $ff-parrafos;
+      font-weight: 400;
+      color: rgb(100, 143, 186);
+      text-align: center;
+      padding-top: 10px;
+
+      &:hover {
+        font-weight: 500;
+        color: rgb(46, 114, 182);
+      }
+    }
+  }
+
+  &__ubicacion {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10%;
+    margin-top: 2%;
+
+    &__titulo {
+      color: $c-secundario-v;
+      font-family: $ff-titulos;
+      font-weight: 500;
+      font-size: 1.2rem;
+      text-align: center;
+      padding-bottom: 2%;
+    }
+
+    &__mapa {
+      @include centrar-elemento;
+      width: 100%;
+    }
+  }
+}
+
+
+/* Sección Recordatorios */
+
+.recordatorios {
+  width: 99vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40%;
+
+  &__ilustracion {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+
+    &img {
+      max-width: 90%;
+      margin-top: 15%;
+    }
+  }
+
+  &__textos {
+    @include centrar-elemento;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 2fr;
+    margin-top: 4%;
+    justify-content: left;
+
+    &__switch {
+      grid-column: 1;
+      max-width: 70%;
+    }
+
+    &__titulo {
+      grid-column: 2;
+      text-align: left;
+      margin-left: -4%;
+      color: $c-secundario-v;
+      font-family: $ff-titulos;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    &__parrafo {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 2;
+      text-align: left;
+      font-size: 0.8rem;
+      font-family: $ff-parrafos;
+      font-weight: 500;
+      text-align: left;
+      color: $gris-parrafos;
+      line-height: 1.5rem;
+      flex-basis: 40%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+/* Sección Reseñas */
+
+.reseñas__titulo {
+  color: $c-princ;
+  font-family: $ff-titulos;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  flex-basis: 50%;
+  flex-grow: 2;
+  flex-shrink: 0;
+  margin-top: 8%;
+}
+
+.reseñas__reseñas__divisor {
+  height: 10px;
+  border: 0;
+  box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+.reseñas__tarjetas {
+  @include centrar-elemento;
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 2%;
+
+  &__contenedor {
+    width: 90%;
+    margin-bottom: 10%;
+    background-color: rgb(247, 247, 247);
+    border-radius: 30px;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-auto-rows: auto;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
+    align-self: center;
+  }
+
+  &__imagen {
+    border-radius: 50px;
+    max-width: 50px;
+    height: 50px;
+    object-fit: cover;
+    grid-row: span 2;
+  }
+
+  &__user-name {
+    color: rgb(100, 143, 186);
+    font-family: $ff-titulos;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    align-self: center;
+    grid-column: 2;
+    padding-left: 2%;
+  }
+
+  &__user-country {
+    color: $c-textogris;
+    font-family: $ff-titulos;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    grid-column: 2;
+    padding-left: 2%;
+  }
+
+  &__imgreseña {
+    padding: 5% 0%;
+    border-radius: 10px;
+    width: 100%;
+    border-radius: 15%;
+    object-fit: cover;
+    grid-column: span 2;
+  }
+
+  &__user-opinion {
+    grid-column: span 2;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: center;
+    color: $gris-parrafos;
+  }
+
+  &__estrellas {
+    grid-column: span 2;
+    width: 50%;
+    justify-self: center;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Banner */
+
+  .banner-princ {
+    height: 450px;
+
+    &__parrafo {
+      width: 50%;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+    }
+
+    &__titulo {
+      font-size: 2.5rem;
+    }
+  }
+
+  /* Itinerario */
+
+  .itinerario {
+    @include centrar-elemento;
+
+    &__titulo {
+      font-weight: 500;
+      font-size: 2.2rem;
+      text-align: center;
+      flex-basis: 50%;
+      flex-shrink: 0;
+      ;
+    }
+
+    &__contenido {
+      @include centrar-elemento;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      column-gap: normal;
+    }
+
+    &__imagen {
+      flex-direction: column;
+      max-width: 50%;
+      @include centrar-elemento;
+      flex-shrink: 1;
+      padding: 2%;
+    }
+
+    &__parrafo {
+      font-size: 1rem;
+      font-family: $ff-parrafos;
+      font-weight: 400;
+      color: $gris-parrafos;
+      line-height: 1.4rem;
+      text-align: left;
+      flex-basis: 40%;
+      flex-shrink: 0;
+      align-self: center;
+    }
+  }
+
+  /* Sección Hoteles */
+
+
+  .hoteles {
+
+    &__encabezado {
+      margin: 0% 4%;
+
+      &__parrafo {
+        font-weight: 500;
+        font-size: 0.9rem;
+      }
+
+      &__subtitulo {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__destacados {
+      align-items: space-between;
+
+
+      &__parrafo {
+        font-size: 1.3rem;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        text-align: center;
+        color: $gris-parrafos;
+        line-height: 1.5rem;
+        flex-basis: 40%;
+        flex-shrink: 0;
+        padding: 2%;
+        align-self: center;
+      }
+
+      &__mapa {
+        width: 100%;
+      }
+
+      &ubicacion__titulo {
+        color: $c-secundario-v;
+        font-family: $ff-titulos;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 2%;
+      }
+
+      &ubicacion__mapa {
+        @include centrar-elemento;
+      }
+    }
+  }
+
+
+  /* Sección Recordatorios */
+
+  .recordatorios {
+    @include centrar-elemento;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    flex-basis: 40% 60%;
+    margin-top: -42%;
+    justify-content: center;
+    gap: 15;
+
+    &ilustracion {
+      flex-basis: 40%;
+    }
+
+    &__textos {
+      flex-grow: 1;
+      grid-template-columns: 15% 85%;
+
+      &__switch {
+        display: grid;
+        max-width: 30px;
+        align-self: center;
+      }
+
+      &__titulo {
+        display: grid;
+        text-align: left;
+        margin-left: 1%;
+        align-self: center;
+        color: $c-secundario-v;
+        font-family: $ff-titulos;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      &__parrafo {
+        display: grid;
+        grid-column: 1 / span 2;
+        text-align: left;
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: $gris-parrafos;
+        line-height: 1.5rem;
+        padding: 2% 2% 4% 2%;
+
+      }
+    }
+  }
+
+  /* Sección Reseñas */
+
+  .reseñas__titulo {
+
+    font-size: 1.3rem;
+  }
+
+  
+  .reseñas__tarjetas {
+    @include centrar-elemento;
+    margin-top: 8%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__contenedor {
+      @include centrar-elemento;
+      margin-bottom: 20%;
+      background-color: rgb(247, 247, 247);
+      border-radius: 30px;
+      padding: 5%;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-auto-rows: auto;
+      box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+      align-self: center;
+    }
+
+    &__imagen {
+      max-width: 40px;
+      height: 40px;
+    }
+
+    &__user-name {
+      padding-left: 10%;
+    }
+
+
+    &__user-country {
+      padding-left: 10%;
+    }
+
+    &__imgreseña {
+      object-fit: fill;
+      grid-column: span 2;
+    }
+
+    &__user-opinion {
+      grid-column: span 2;
+      font-family: $ff-parrafos;
+      font-weight: 500;
+      font-size: 0.8rem;
+      text-align: center;
+      color: $gris-parrafos;
+    }
+
+    &__estrellas {
+      grid-column: span 2;
+      width: 50%;
+      justify-self: center;
+    }
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+  /* Banner */
+  .banner-princ {
+    height: 550px;
+
+    &__parrafo {
+      margin-top: 1%;
+      width: 40%;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+    }
+
+    &__titulo {
+      font-size: rem;
+    }
+  }
+
+  /* Itinerario */
+
+  .itinerario {
+    @include centrar-elemento;
+
+
+    &__titulo {
+      font-weight: 500;
+      font-size: 2.5rem;
+      flex-basis: 50%;
+      flex-grow: 2;
+      flex-shrink: 0;
+    }
+
+    &__contenido {
+      @include centrar-elemento;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+    
+    }
+
+    &__imagen {
+      flex-direction: column;
+      max-width: 50%;
+      flex-shrink: 1;
+      @include centrar-elemento;
+    }
+
+    &__parrafo {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.7rem;
+      text-align: left;
+      flex-basis: 40%;
+      flex-shrink: 0;
+      align-self: center;
+    }
+  }
+
+  /* Sección Hoteles */
+
+  .hoteles {
+    @include centrar-elemento;
+    padding: 3% 8% 30% 8%;
+
+
+    &__encabezado__parrafo {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+
+    &__destacados {
+
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+
+      &__ubicacion__titulo {
+        color: $c-secundario-v;
+        font-family: $ff-titulos;
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-align: center;
+        padding-bottom: 8%;
+      }
+
+      &__ubicacion__mapa {
+        @include centrar-elemento;
+      }
+    }
+  }
+
+
+  /* Sección Recordatorios */
+
+  .recordatorios {
+    @include centrar-elemento;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: -24%;
+    justify-content: center;
+    margin-bottom: 8%;
+
+    &__ilustracion {
+
+      &img {
+        width: 50%;
+      }
+    }
+
+    &__textos {
+      width: 50%;
+      margin-right: 5%;
+      margin-top: -10%;
+      display: grid;
+      grid-auto-rows: auto;
+      grid-template-columns: 10% 90%;
+      justify-items: space-between;
+      gap: 5%;
+      align-self: top;
+
+
+      &__switch {
+        display: grid;
+        max-width: 40px;
+        align-self: center;
+      }
+
+      &__titulo {
+        display: grid;
+        text-align: left;
+        margin-left: 1%;
+        align-self: center;
+        font-weight: 500;
+        font-size: 1.2rem;
+      }
+
+      &__parrafo {
+        font-size: 0.9rem;
+        font-weight: 500;
+        padding: 2% 10% 4% 2%;
+        align-self: center;
+      }
+    }
+  }
+
+  /* Sección Reseñas*/
+
+  .reseñas__titulo {
+
+    font-size: 1.3rem;
+  }
+
+  
+  .reseñas__tarjetas {
+    @include centrar-elemento;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    align-items: center;
+
+
+    &__contenedor {
+      width: 80%;
+      margin-bottom: 20%;
+      background-color: rgb(247, 247, 247);
+      border-radius: 30px;
+      padding: 5%;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-auto-rows: auto;
+      box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+      align-self: center;
+    }
+
+    &__imagen {
+      max-width: 40px;
+      height: 40px;
+      grid-row: span 2;
+    }
+
+    &__user-name {
+      padding-left: 10%;
+    }
+
+
+    &__user-country {
+      padding-left: 10%;
+    }
+
+    &__imgreseña {
+      object-fit: fill;
+      grid-column: span 2;
+    }
+
+    &__user-opinion {
+      grid-column: span 2;
+      font-weight: 400;
+      font-size: 0.8rem;
+    }
+
+    &__estrellas {
+      grid-column: span 2;
+      width: 50%;
+      justify-self: center;
+    }
+  }
+}

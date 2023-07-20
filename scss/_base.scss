@@ -1,0 +1,114 @@
+$c-princ: rgb(63, 113, 239);
+$c-secundario-n: rgb(255, 126, 52);
+$c-secundario-v: rgb(151, 38, 243);
+$c-secundario-c: rgb(192, 239, 253);
+$c-textogris: rgb(59, 61, 63);
+$gris-parrafos: rgb(59, 61, 63);
+$gris-fondo: rgb(216, 216, 216);
+$blanco-boton: white;
+
+$ff-titulos: "Quicksand", sans-serif;
+$ff-parrafos: "Montserrat", sans-serif;
+
+
+/* Fuentes */
+
+@font-face {
+  font-family: "Quicksand";
+  src: url("../fonts/Quicksand-VariableFont_wght.ttf") format("truetype");
+  line-height: 1.2rem;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  line-height: 1.2rem;
+}
+
+/* Reseteo */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  color: $c-secundario-c;
+  font-family: $ff-titulos;
+  font-weight: 500;
+  &:hover {
+    color: white;
+  }
+}
+a:link {
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+}
+
+
+/* Textos */
+
+.titulo-secciones {
+  color: rgb(89, 162, 252);
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.subtitulo-secciones {
+  color: $c-princ;
+  font-family: $ff-titulos;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-align: center;
+  flex-basis: 50%;
+  flex-grow: 2;
+  flex-shrink: 0;
+  margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+  .subtitulo-secciones {
+    color: $c-princ;
+    font-family: $ff-titulos;
+    font-weight: 500;
+    font-size: 2.3rem;
+    text-align: center;
+    flex-grow: 2;
+    flex-shrink: 0;
+    margin-top: 2%;
+  }
+}
+
+.titulo-paginas {
+  color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 4.7rem;
+  text-align: center;
+  margin-top: 15%;
+}
+
+
+@mixin centrar-elemento {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@mixin banner-secciones {
+  background-attachment: fixed;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin-bottom: 5%;
+}

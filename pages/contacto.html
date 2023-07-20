@@ -5,104 +5,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Contacto</title>
+    <title>Explorá</title>
 </head>
 
 <body>
-    <header> 
-        <header> 
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <img src="./img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <img src="../img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./explorar.html">Explorar</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./vuelos.html">Vuelos</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./hoteles.html">Hoteles</a>
-                        </li>
-        
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contacto.html">Contacto</a>
-                        </li>
-                    </ul>
-                </div>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./explorar.html">Explorar</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./vuelos.html">Vuelos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./hoteles.html">Hoteles</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
     </header>
+
     
 
 <main>
+
+   
     <section>
-        <img src="/img/banner-contacto.jpg" alt="mapas, lupa, lentes de sol y pasaporte sobre una valija vintage cuadrillé">
-        <h1>Contacto</h1>
-        <h2>¿Tenés dudas o sugerencias? ¡Escribinos!</h2>
+    <div class="banner-princ--contacto">
+        <h1 class="titulo-paginas">Contacto</h1>
+        </div>
+        <p class="banner-princ__parrafo-pages">¿Tenés dudas o sugerencias? ¡Escribinos!</p>
     </section>
 
-    <section>
-        <article class="formulario">
+    <section class="buscador-vuelos">
+        <article class="contacto">
             <form action="ruta">
-                <div>
-                    <input type="text" id="nombre" placeholder="Nombre y Apellido">
-                    <input type="email" placeholder="Email">
-                    <input type="tel" placeholder="Teléfono">
+                <div class="form-contacto">
+                    <input class="form-contacto__name" type="text" id="nombre" placeholder="Nombre y Apellido">
+                    <input class="form-contacto__mail" type="email" placeholder="Email">
+                    <input class="form-contacto__tel" type="tel" placeholder="Teléfono">
                 
-                    <p>Seleccioná el motivo de tu mensaje</p>
-                    <select name="consulta" id="consulta">
+                    <p class="form-contacto__motivo" >Motivo de tu mensaje</p>
+                    <select  class="form-contacto__motivo-drop" name="consulta" id="consulta">
                         <option value="consulta">Consulta</option>
                         <option value="reclamo">Sugerencia</option>
                         <option value="prensa">Prensa</option>
                     </select>
-                </div>
-            
-                <div>
-                    <label for="mensaje">Escribí tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="Novedades" value="acepto">
-                    <label for="Privacidad">Acepto la política de privacidad </label>
+                
+                    <label class="form-contacto__msj" for="mensaje">Escribí tu mensaje</label>
+                    <textarea  class="form-contacto__consulta-textarea" name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+               
+                    <input class="footer__formsuscripcion__checkbox--explorar"  type="checkbox" id="Novedades" value="acepto">
+                    <label  class="form-contacto__motivo" for="Privacidad">Acepto la política de privacidad </label>
+                    <input class="form-contacto__boton" type="submit" value="Enviar">
                 </div>
 
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Cancelar">
-                </div>
             </form>
         </article>
+
+            <div class="direccion">
+                <iframe class="direccion__mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26275.566141725434!2d-58.3898415932574!3d-34.59288783460365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3356b3ed21ee7%3A0xbd6f6786a7efaea1!2sWeWork%20Espacios%20de%20Oficinas%20%26%20Coworking%20Ing.%20Enrique%20Butty!5e0!3m2!1ses!2sar!4v1685969955744!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+                <p class="direccion__p">Ing. Enrique Butty 275, C1001AFA CABA</p>
+                <p class="direccion__p">011 5983 9380</p>
+            </div>
+
     </section>
 
-    <section>
-        <article>
-            <img src="/img/ilus-contacto.png" alt="ilustración de una mujer sonriente sosteniendo su teléfono y valija, de fondo una ciudad">
-        </article>
-    </section>
-
-    <section>
-        <article>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26275.566141725434!2d-58.3898415932574!3d-34.59288783460365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3356b3ed21ee7%3A0xbd6f6786a7efaea1!2sWeWork%20Espacios%20de%20Oficinas%20%26%20Coworking%20Ing.%20Enrique%20Butty!5e0!3m2!1ses!2sar!4v1685969955744!5m2!1ses!2sar" width="1400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"></a>
-            <p>Ing. Enrique Butty 275, C1001AFA CABA</p>
-            <p>011 5983 9380</p>
-        </article>
-    </section>
-
+    
+    
 </main>
 
 <footer>
@@ -136,14 +129,14 @@
             </form>
         </div>
 
-        <div class="footer__index"-footer"">
+        <div class="footer__index">
             <nav>
                 <ul class="footer__index__menu">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li> <a href="./pages/explorar.html">Explorá</a></li>
-                    <li><a href="./pages/vuelos.html">Vuelos </a></li>
-                    <li><a href="./pages/hoteles.html">Hoteles </a></li>
-                    <li><a href="./pages/contacto.html">Contacto </a></li>            
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li> <a href="./explorar.html">Explorá</a></li>
+                    <li><a href="./vuelos.html">Vuelos </a></li>
+                    <li><a href="./hoteles.html">Hoteles </a></li>
+                    <li><a href="./contacto.html">Contacto </a></li>             
                 </ul>
             </nav>
         </div>

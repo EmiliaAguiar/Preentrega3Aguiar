@@ -1,0 +1,402 @@
+/* Explorar */
+
+/* Sección Banner*/
+
+.banner-princ {
+
+  &__titulo--pages {
+    color: rgb(255, 255, 255);
+    font-family: $ff-parrafos;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4.7rem;
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  &__parrafo-pages {
+    @include centrar-elemento;
+    margin-top: 3%;
+    padding: 5%;
+    font-size: 0.9rem;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    color: $gris-parrafos;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+
+  &--explorar {
+    @include banner-secciones;
+    background-image: url(/img/banner-explora.jpg);
+    background-position: 100% 50%;
+  }
+}
+
+/* Sección Buscador*/
+
+.explorar {
+  width: 80%;
+  @include centrar-elemento;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-auto-rows: auto;
+  padding: 3% 8% 10% 8%;
+  background-color: rgba(232, 232, 232, 0.902);
+  border-radius: 40px;
+  gap: 3%;
+
+  &__ciudad {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: $ff-parrafos;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+  }
+
+  &__fecha {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: $ff-parrafos;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+  }
+
+  &__opciones {
+    font-size: 0.7rem;
+    padding: 2%;
+    width: 100%;
+    font-family: $ff-parrafos;
+    border-radius: 10px;
+    border-style: solid 1px grey;
+    grid-column: span 2;
+  }
+
+  .hoteles__ubicacion__mapa--explorar {
+    grid-column: span 2;
+    @include centrar-elemento;
+    margin-top: 5%;
+  }
+}
+
+/* Sección Destacados*/
+
+.lugares {
+  width: 100%;
+  padding: 3% 8% 20% 8%;
+  border-radius: 40px;
+
+  &__encabezado__titulo {
+    color: rgb(89, 162, 252);
+    font-family: $ff-titulos;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    flex-basis: 50%;
+    flex-grow: 2;
+    flex-shrink: 0;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+
+  &__destacados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 4%;
+    align-items: flex-start;
+    margin-bottom: 8%;
+
+    &__tarjetas {
+      background-color: aliceblue;
+      width: 100%;
+      border-radius: 30px;
+      padding: 10%;
+      justify-content: center;
+      align-items: center;
+      gap: 2%;
+      box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+
+      &:hover {
+        width: 102%;
+        background-color: rgb(217, 233, 247);
+      }
+    }
+
+    &__imagen {
+      width: 100%;
+      border-radius: 10%;
+    }
+
+    &__titulo {
+      font-size: 0.9rem;
+      font-family: $ff-parrafos;
+      font-weight: 400;
+      color: rgb(100, 143, 186);
+      text-align: center;
+      padding-top: 10px;
+
+      &:hover {
+        font-weight: 500;
+        color: rgb(46, 114, 182);
+      }
+    }
+
+    &__parrafo {
+      font-size: 0.9rem;
+      font-family: $ff-parrafos;
+      font-weight: 500;
+      text-align: center;
+      color: $gris-parrafos;
+      line-height: 1.5rem;
+      flex-basis: 40%;
+      flex-shrink: 0;
+      padding: 2%;
+      align-self: center;
+    }
+  }
+}
+
+/* Sección Registro */
+
+.registro {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  gap: 10;
+
+  &__ilustracion {
+    @include centrar-elemento;
+    display: flex;
+    justify-content: center;
+
+    &img {
+      width: 50%;
+    }
+  }
+
+  &__textos {
+    @include centrar-elemento;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    margin-top: 4%;
+    justify-content: left;
+    background-color: #dddddd;
+    border-radius: 50px;
+    padding: 12%;
+
+
+    &__titulo {
+      grid-column: span 2;
+      text-align: left;
+      color: $c-secundario-v;
+      font-family: $ff-titulos;
+      font-weight: 500;
+      font-size: 1.2rem;
+    }
+
+    &__parrafo {
+      grid-row: 2 / span 1;
+      grid-column: 1 / span 2;
+      ;
+      text-align: left;
+      font-size: 0.8rem;
+      font-family: "Montserrat", "sans-serif";
+      font-weight: 500;
+      text-align: left;
+      color: $c-textogris;
+      line-height: 1.5rem;
+      flex-basis: 40%;
+      flex-shrink: 0;
+
+    }
+  }
+
+  .footer__formsuscripcion__acuerdo--explorar {
+    color: rgb(98, 100, 103);
+    font-family: $ff-titulos;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    line-height: 1.2rem;
+    margin-top: 1%;
+  }
+
+  .footer__formsuscripcion__checkbox--explorar {
+    width: 40%;
+  }
+  
+  .footer__formsuscripcion__boton:hover {
+    background-color: $c-secundario-v;
+}
+}
+
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Banner*/
+
+  .banner-princ {
+
+    &__titulo--pages {
+      margin-top: 20%;
+    }
+
+    &__parrafo-pages {
+      font-size: 1rem;
+ }
+
+    &--explorar {
+      background-position: 50% 100%;
+
+    }
+  }
+
+  /* Sección Buscador*/
+
+  .explorar {
+
+    &__ciudad {
+      font-size: 0.9rem;
+    }
+  }
+
+
+  /* Sección Destacados*/
+
+  .lugares {
+    padding: 3% 8% 10% 8%;
+
+
+    &__encabezado__titulo {
+      font-size: 2.2rem;
+    }
+
+    &__destacados {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4%;
+      align-items: flex-start;
+      margin-bottom: 8%;
+    }
+
+    &__tarjetas {
+
+      &:hover {
+        width: 100%;
+      }
+    }
+  }
+
+  /* Sección Registro */
+
+  .registro {
+
+    &__textos {
+      padding: 8%;
+    }
+
+    .footer__formsuscripcion__acuerdo--explorar {
+      margin-top: 3%;
+    }
+
+    .footer__formsuscripcion__checkbox--explorar {
+      width: 25%;
+    }
+  }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+  /* Banner*/
+
+  .banner-princ {
+
+    &__titulo--pages {
+      margin-top: 20%;
+    }
+
+    &__parrafo-pages {
+      font-size: 1rem;
+      line-height: 2rem;
+ }
+   
+
+    &--explorar {
+      background-position: 50% 100%;
+
+    }
+  }
+
+  /* Sección Buscador*/
+
+  .explorar {
+
+    &__ciudad {
+      font-size: 1.1rem;
+    }
+  }
+
+  /* Sección Destacados*/
+
+  .lugares {
+    padding: 3% 8% 5% 8%;
+
+    &__encabezado__titulo {
+      font-size: 2.3rem;
+    }
+
+    &__encabezado__parrafo {
+      font-size: 2.3rem;
+      font-weight: 500;
+    }
+
+    &__destacados {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 4%;
+      align-items: flex-start;
+      margin-bottom: 8%;
+      margin-top: 3%;
+    }
+
+  }
+
+  /* Sección Registro */
+
+  .registro {
+    @include centrar-elemento;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 5%;
+
+   &__ilustracion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+  }
+
+&__textos {
+    padding:7%;
+}
+  
+  .footer__formsuscripcion__checkbox--explorar {
+    width: 40%;
+  }
+}
+}

@@ -1,0 +1,40 @@
+    .navbar-expand-lg .navbar-nav .nav-link {
+        width: 100%;
+        font-size: 1rem;
+        font-family:$ff-parrafos;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        font-family:$ff-parrafos;
+        font-weight: 500;
+        color: $c-princ;
+        padding-right: 3%;
+    
+    &:hover {
+        text-decoration:none;
+        color:$c-secundario-v;
+        font-weight: 600;
+        text-decoration:underline dotted 2px;
+    }
+    
+    .navbar-toggler {
+        border: solid 1px $c-textogris;
+        padding: 0.3rem;
+ 
+        &:hover {
+        border: none;
+        background-color: rgb(154, 206, 251);
+    }
+    
+   &-icon {
+        background-image: url("/img/menu.png");
+        max-height: 25px;
+   
+        &:hover {
+        filter:brightness(200%);
+    }
+    }
+ }
+
+    
+ }

@@ -1,0 +1,478 @@
+/* Banner */
+
+.banner-princ {
+
+    &--vuelos {
+        background-image: url(/img/banner-vuelos.jpg);
+        @include banner-secciones;
+        background-position: 100% 50%;
+
+    }
+}
+
+/* ¿Tren o avión? */
+
+
+.two-columns {
+    @include centrar-elemento;
+    gap: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.subtitulo-secciones {
+    font-size: 1.2rem;
+}
+
+/* Sección Vuelos*/
+
+.buscador-vuelos {
+    @include centrar-elemento;
+    width: 90%;
+    background-color: rgba(232, 232, 232, 0.902);
+    border-radius: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 5%;
+    padding-bottom: 8%;
+
+}
+
+.filtros {
+    @include centrar-elemento;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 28% 5% 28% 5% 28%;
+    grid-auto-rows: auto;
+    padding: 3% 8% 10% 8%;
+    grid-row-gap: 6%;
+
+
+    &-hr {
+        grid-column: span 6;
+    }
+
+    &__origen {
+        grid-column: span 2;
+        width: 90%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+    &__destino {
+        grid-column: span 2;
+        width: 90%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+    &__fecha {
+        grid-column: span 2;
+        width: 90%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+        border: 1px solid black;
+    }
+
+    &__idayvuelta {
+        width: 100%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+    &__ida {
+        width: 100%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+    &__vuelta {
+        width: 100%;
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.7rem;
+    }
+
+
+    .subtitulo-secciones {
+        grid-column: span 6;
+        margin-bottom: 1%;
+        color: $c-secundario-v;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .vuelos__p {
+        font-family: $ff-parrafos;
+        font-weight: 500;
+        font-size: 0.6rem;
+        text-align: left;
+        margin: 2%;
+        align-self: center;
+    }
+}
+
+.resultado {
+    @include centrar-elemento;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 10% 30%;
+    grid-template-rows: 35% 25% 40%;
+    grid-auto-flow: column;
+    overflow: visible;
+    grid-row-gap: 5%;
+    padding: 2%;
+
+
+    &__aerolinea-logo {
+        grid-row: span 3;
+        width: 90%;
+        align-items: left;
+        align-self: center;
+    }
+
+    &__origen {
+        font-family: $ff-parrafos;
+        font-weight: 800;
+        font-size: 1rem;
+        text-align: left;
+        margin: 2%;
+        align-self: end;
+
+        &__fecha {
+            font-family: $ff-parrafos;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-align: left;
+            margin: 2%;
+            align-self: center;
+        }
+
+        &__hora {
+            font-family: $ff-parrafos;
+            font-weight: 600;
+            font-size: 0.7rem;
+            text-align: left;
+            margin: 2%;
+            align-self: start;
+        }
+    }
+
+    &__icono-valija {
+        grid-row: span 3;
+        @include centrar-elemento;
+        width: 100%;
+        align-self: center;
+    }
+
+    &__equipaje {
+        font-family: $ff-parrafos;
+        color: $c-secundario-v;
+        font-weight: 600;
+        font-size: 0.7rem;
+        text-align: center;
+        margin: 2%;
+        align-self: end;
+    }
+
+    &__precio {
+        font-family: $ff-parrafos;
+        color: $c-princ;
+        font-weight: 800;
+        font-size: 1rem;
+        text-align: center;
+        margin: 2%;
+        align-self: end;
+    }
+
+    .boton-comprar {
+        @include centrar-elemento;
+        width: 90%;
+        justify-content: left;
+        font-family: $ff-titulos;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-align: center;
+        color: $c-princ;
+        background-color: $c-secundario-c;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.035);
+        padding: 0%;
+
+        &:hover {
+            color: white;
+            background-color: $c-princ;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+
+
+/* Sección Registro */
+.registro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 10;
+
+    &__ilustracion {
+        @include centrar-elemento;
+        display: flex;
+        justify-content: center;
+
+        &img {
+            width: 50%;
+        }
+    }
+
+    &__textos {
+        @include centrar-elemento;
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        grid-template-rows: 1fr;
+        margin-top: 4%;
+        justify-content: left;
+        background-color: #dddddd;
+        border-radius: 50px;
+        padding: 12%;
+
+
+        &__titulo {
+            grid-column: span 2;
+            text-align: left;
+            color: $c-secundario-v;
+            font-family: $ff-titulos;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+
+        &__parrafo {
+            grid-row: 2 / span 1;
+            grid-column: 1 / span 2;
+            ;
+            text-align: left;
+            font-size: 0.8rem;
+            font-family: "Montserrat", "sans-serif";
+            font-weight: 500;
+            text-align: left;
+            color: $c-textogris;
+            line-height: 1.5rem;
+            flex-basis: 40%;
+            flex-shrink: 0;
+
+        }
+    }
+
+    .footer__formsuscripcion__acuerdo--explorar {
+        color: rgb(98, 100, 103);
+        font-family: $ff-titulos;
+        font-weight: 500;
+        font-size: 0.8rem;
+        text-align: left;
+        line-height: 1.2rem;
+        margin-top: 1%;
+    }
+
+    .footer__formsuscripcion__checkbox--explorar {
+        width: 40%;
+    }
+}
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    /* ¿Tren o avión? */
+
+
+    .two-columns {
+        @include centrar-elemento;
+        gap: 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitulo-secciones {
+        font-size: 1.6rem;
+    }
+
+    /* Sección Vuelos*/
+
+    .filtros {
+        @include centrar-elemento;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 3% 30% 3% 30% 3% 30%;
+        grid-auto-rows: auto;
+        padding: 3% 8% 10% 8%;
+        grid-row-gap: 6%;
+
+        .subtitulo-secciones {
+            font-size: 1.4rem;
+        }
+
+        .vuelos__p {
+            font-size: 0.8rem;
+        }
+    }
+
+    /* Sección Registro */
+
+    .registro {
+
+        &__textos {
+            padding: 8%;
+        }
+
+        .footer__formsuscripcion__acuerdo--explorar {
+            margin-top: 3%;
+        }
+
+        .footer__formsuscripcion__checkbox--explorar {
+            width: 25%;
+        }
+    }
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+    /* ¿Tren o avión? */
+
+
+    .two-columns {
+        @include centrar-elemento;
+        gap: 15%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .subtitulo-secciones {
+        font-size: 1.8rem;
+    }
+
+    .reseñas__tarjetas__user-opinion {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    /* Sección Vuelos*/
+
+    .filtros {
+        @include centrar-elemento;
+        width: 95%;
+        display: grid;
+        grid-template-columns: 3% 30% 3% 30% 3% 30%;
+        grid-auto-rows: auto;
+        padding: 3% 8% 10% 8%;
+        grid-row-gap: 6%;
+
+        &__idayvuelta {
+            width: 70%; 
+        }
+    
+        &__ida {
+            width: 70%;
+        }
+    
+        &__vuelta {
+            width: 70%;
+        }
+
+        .subtitulo-secciones {
+            font-size: 1.6rem;
+        }
+
+        .vuelos__p {
+            font-size: 0.9rem;
+        }
+    }
+
+
+    .resultado {
+        @include centrar-elemento;
+        width: 90%;
+        grid-template-columns: 20% 15% 15% 10% 40%;
+        grid-template-rows: 30% 20% 40%;
+
+
+        &__aerolinea-logo {
+            grid-row: span 3;
+            width: 60%;
+            align-items: left;
+            align-self: center;
+        }
+
+        &__origen {
+            font-size: 1.2rem;
+
+            &__fecha {
+                font-size: 0.9rem;
+            }
+
+            &__hora {
+                font-size: 0.9rem;
+            }
+        }
+
+        &__icono-valija {
+            width: 80%;
+        }
+
+        &__equipaje {
+            font-size: 0.9rem;
+        }
+
+        &__precio {
+            font-size: 1.3rem;
+        }
+
+        .boton-comprar {
+            @include centrar-elemento;
+            width: 70%;
+
+        }
+    }
+
+
+
+    /* Sección Registro */
+
+    .registro {
+        @include centrar-elemento;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        margin-top: 5%;
+
+        &__ilustracion {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+        }
+
+        &__textos {
+            padding: 7%;
+        }
+
+        .footer__formsuscripcion__checkbox--explorar {
+            width: 40%;
+        }
+    }
+
+}

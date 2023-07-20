@@ -1,0 +1,156 @@
+/* Banner */
+
+.banner-princ {
+
+  &--hoteles {
+    background-image: url(/img/banner-hotel.jpg);
+    background-position: 100% 100%;
+    @include banner-secciones;
+  }
+
+  &__parrafo--pages {
+    @include centrar-elemento;
+    margin-top: 2%;
+    padding: 5%;
+    font-size: 1.2rem;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    color: $gris-parrafos;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* Buscador Hoteles */
+
+.filtros-hoteles {
+  @include centrar-elemento;
+  width: 90%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-auto-rows: auto;
+  padding: 3% 8% 5% 8%;
+  grid-row-gap: 6%;
+
+  &__ciudad {
+    grid-column: span 2;
+  }
+
+  &__fecha {
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    margin: 2%;
+    align-self: center;
+
+  }
+
+  &__dropdown {
+    width: 100%;
+    grid-column: span 2;
+    font-family: $ff-parrafos;
+    font-weight: 500;
+    font-size: 0.8rem;
+    text-align: left;
+    align-self: center;
+  }
+
+}
+
+
+.contenedor-hoteles {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 1%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+
+.hoteles-tarjetas {
+  @include centrar-elemento;
+  width: 80%;
+  margin-bottom: 10%;
+  background-color: rgb(247, 247, 247);
+  border-radius: 30px;
+  padding: 5%;
+  box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.167);
+  align-self: start;
+}
+
+.boton {
+  color: white;
+
+}
+
+
+
+/* Tablet*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  /* Banner*/
+
+  .banner-princ {
+    &__parrafo--pages {
+      @include centrar-elemento;
+      font-weight: 500;
+      padding: 4;
+      margin-top: 2%;
+    }
+  }
+
+  /* Hoteles*/
+
+
+  .contenedor-hoteles {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+  }
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1024px) {
+
+  /* Banner*/
+
+  .banner-princ {
+
+    &__titulo--pages {
+      margin-top: 20%;
+    }
+
+    &__parrafo--pages {
+      @include centrar-elemento;
+      font-weight: 500;
+      font-size: 1.5rem;
+      padding: 1%;
+      margin-top: 1%;
+    }
+  }
+
+
+  /* Hoteles*/
+
+  .filtros-hoteles {
+    @include centrar-elemento;
+    grid-template-columns: 10% 90%;
+   
+   }
+
+  .contenedor-hoteles {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 3%;
+
+  }
+}

@@ -1,0 +1,26 @@
+.boton {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    font-family: "Quicksand", "sans-serif";
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    color: $c-princ;
+    background-color:$c-princ;
+    padding: 2% 7%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
+}
+.boton:hover {
+    font-weight: 600;
+    font-size: 1rem;
+    color:rgb(180, 226, 249);
+    background-color:$c-secundario-v;
+}

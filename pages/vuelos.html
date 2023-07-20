@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Vuelos</title>
+
+    <title>Encontrá los mejores precios en vuelos y conexiones</title>
+
 </head>
+
 <body>
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <img src="./img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <img src="../img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,166 +28,140 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./explorar.html">Explorar</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./vuelos.html">Vuelos</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./hoteles.html">Hoteles</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
+            </div>
+        </nav>
+    </header>
 
     <main>
         <section>
             <article>
-                <div>
-                    <img src="/img/banner-vuelos.jpg" alt="tres aviones estacionados en una pista de aterrizaje al atardecer">
-                    <h1>VUELOS</h1>
-                    <h2>¿Vuelo o tren? Te ayudamos a elegir el mejor transporte según tu itinerario.</h2>
+                <div class="banner-princ--vuelos">
+                    <h1 class="titulo-paginas">Vuelos</h1>
                 </div>
+                <p class="banner-princ__parrafo--pages"> <b> ¿Vuelo o tren? </b> Te ayudamos a elegir el mejor transporte según tu
+                    itinerario.</p>
             </article>
         </section>
 
-        <section>
-            <article>
-                <div>
-                    <h3>Elegí tren si...</h3>
-                    <p>...el trayecto es corto y tenés poco tiempo. Sólo tenés que llegar 15 minutos antes de tu hora de salida.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Elegí avión si...</h3>
-                    <p>...tenés que atravesar una distancia larga. Muchas veces, el avión es incluso la opción más económica. Considerá que en la mayoría de los casos, tenés que llegar 2 a 3 hs antes del horario del vuelo.</p>
-                </div>
-            </article>
-        </section>
-
-        <article>
-            <div>
-                <h2>¡Comprá tu vuelo al mejor precio!</h2>
-            </div>
-        </article>
-
-        <section>
-            <article>
-                <div class="vuelos">
-                    <input type="search"? placeholder="Ciudad de origen" style="width:20%">
-                    <input type="search"? placeholder="Ciudad de destino" style="width:20%">
-                    <input type="datetime" placeholder="08/06/2023">
-                    <input type="checkbox"><p>Ida y vuelta</p>
-                    <input type="checkbox"><p>Vuelta</p>
-                    <input type="checkbox"><p>Multidestino</p>
-                    <hr>
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <div>
-                <img src="/img/vueling-logo.png" alt="logo aerolinea vueling">
-                <h3>BUE</h3>
-                <h4>09/06/2023</h4>
-                <h5>10 am</h5>
+        <section class="two-columns">
+            <div class="contenedor-tren">
+                <h3 class="subtitulo-secciones">Elegí tren si...</h3>
+                <p class="reseñas__tarjetas__user-opinion"> <b>...el trayecto es corto y tenés poco tiempo.</b> Sólo
+                    tenés que llegar 15 minutos antes de tu hora de salida.</p>
             </div>
 
-            <div>
-                <h3>RMA</h3>
-                <h4>10/06/2023</h4>
-                <h5>12:15 am</h5> 
-            </div>
-
-            <div>
-                <img src="/img/valija.png" alt="icono de valija">
-            </div>
-
-            <div>
-                <h5>Equipaje de 20 kg incluido</h5>
-                <h3>€693</h3>
-                <button>Comprar</button>
+            <div class="contenedor-avion">
+                <h3 class="subtitulo-secciones">Elegí avión si...</h3>
+                <p class="reseñas__tarjetas__user-opinion"> <b>...tenés que atravesar una distancia larga. </b>Muchas
+                    veces, el avión es incluso la opción más económica. Considerá que tenés que llegar 2 a 3 hs antes
+                    del horario del vuelo.</p>
             </div>
         </section>
 
-        <section>
-            <div>
-                <img src="/img/rynair-logo.png" alt="logo aerolinea rynair">
-                <h3>BUE</h3>
-                <h4>09/06/2023</h4>
-                <h5>1 pm</h5>
+
+        <section class="buscador-vuelos">
+            <div class="filtros">
+                <h2 class="subtitulo-secciones">¡Comprá tu vuelo al mejor precio!</h2>
+                <hr class="filtros-hr">
+                <input class="filtros__origen" type="search" ? placeholder="Origen">
+                <input class="filtros__destino" type="search" ? placeholder="Destino">
+                <input class="filtros__fecha" type="datetime" placeholder="22/07/2023">
+                <input class="filtros__idayvuelta" type="checkbox">
+                <p class="vuelos__p">Ida y vuelta</p>
+                <input class="filtros__ida" type="checkbox">
+                <p class="vuelos__p">Sólo ida</p>
+                <input class="filtros__vuelta" type="checkbox">
+                <p class="vuelos__p">Multidestino</p>
+                <hr class="filtros-hr">
             </div>
 
-            <div>
-                <h3>RMA</h3>
-                <h4>10/06/2023</h4>
-                <h5>2:15 am</h5> 
+            <div class="resultado">
+                <img src="/img/vueling-logo.png" alt="logo aerolinea vueling" class="resultado__aerolinea-logo">
+                <p class="resultado__origen">BUE</p>
+                <p class="resultado__origen__fecha">09/06/2023</p>
+                <p class="resultado__origen__hora">10 am</p>
+                <p class="resultado__origen">RMA</p>
+                <p class="resultado__origen__fecha">10/06/2023</p>
+                <p class="resultado__origen__hora">12:15 am</p>
+                <img src="/img/valija.png" alt="icono de valija" class="resultado__icono-valija">
+                <p class="resultado__equipaje">Equipaje bodega <b>20 kg</b></p>
+                <p class="resultado__precio">€693</p>
+                <button class="boton-comprar">Comprar</button>
             </div>
 
-            <div>
-                <img src="/img/valija.png" alt="icono de valija">
+            <hr class="filtros-hr">
+
+            <div class="resultado">
+                <img src="/img/rynair-logo.png" alt="logo aerolinea rynair" class="resultado__aerolinea-logo">
+                <p class="resultado__origen">BUE</p>
+                <p class="resultado__origen__fecha">09/06/2023</p>
+                <p class="resultado__origen__hora">2 pm</p>
+                <p class="resultado__origen">RMA</p>
+                <p class="resultado__origen__fecha">11/06/2023</p>
+                <p class="resultado__origen__hora">5 am</p>
+                <img src="/img/valija.png" alt="icono de valija" class="resultado__icono-valija">
+                <p class="resultado__equipaje">Equipaje bodega <b>25 kg</b></p>
+                <p class="resultado__precio">€613</p>
+                <button class="boton-comprar">Comprar</button>
+
             </div>
 
-            <div>
-                <h5>Carry on incluido</h5>
-                <h3>€593</h3>
-                <button>Comprar</button>
-            </div>
-        </section>
+            <hr class="filtros-hr">
 
-        <section>
-            <div>
-                <img src="/img/level-logo.png" alt="logo aerolinea level">
-                <h3>BUE</h3>
-                <h4>09/06/2023</h4>
-                <h5>3 pm</h5>
-            </div>
 
-            <div>
-                <h3>RMA</h3>
-                <h4>10/06/2023</h4>
-                <h5>4:15 am</h5> 
+            <div class="resultado">
+                <img src="/img/level-logo.png" alt="logo aerolinea level" class="resultado__aerolinea-logo">
+                <p class="resultado__origen">BUE</p>
+                <p class="resultado__origen__fecha">09/06/2023</p>
+                <p class="resultado__origen__hora">4 pm</p>
+                <p class="resultado__origen">RMA</p>
+                <p class="resultado__origen__fecha">11/06/2023</p>
+                <p class="resultado__origen__hora">4.:10 am</p>
+                <img src="/img/valija.png" alt="icono de valija" class="resultado__icono-valija">
+                <p class="resultado__equipaje">Equipaje <b>carry on 8kg</b></p>
+                <p class="resultado__precio">€569</p>
+                <button class="boton-comprar">Comprar</button>
+
             </div>
 
-            <div>
-                <img src="/img/valija.png" alt="icono de valija">
+            </section>
+
+        <section class="registro">
+            <div class="registro__ilustracion">
+                <img src="/img/ilus-viajero-01.png"
+                    alt="iliustración de un joven viajero sonriente sosteniendo una valija con la ciudad de fondo">
+            </div>
+            <div class="registro__textos">
+                <h2 class="registro__textos__titulo"> Creá tu usuario y guardá tu itinerario</h2>
+                <input class="footer__formsuscripcion__email" type="mail" placeholder="Tu email">
+                <input class="footer__formsuscripcion__email" type="password" placeholder="Elegí tu contraseña">
+                <p class="registro__textos__parrafo">La contraseña debe tener al menos 8 caracteres alfanuméricos y un
+                    simbolo.</p>
+                <input class="footer__formsuscripcion__checkbox--explorar" type="checkbox">
+                <p class="footer__formsuscripcion__acuerdo--explorar">Estoy de acuerdo con los Términos y Condiciones.
+                </p>
+                <button class="footer__formsuscripcion__boton">Registrarme</button>
             </div>
 
-            <div>
-                <h5>Carry on y equipaje de 25 kg incluido</h5>
-                <h3>€793</h3>
-                <button>Comprar</button>
-            </div>
-        </section>
-        
-        <section>
-            <article>
-                <h2>Creá tu usuario y guardá tu itinerario</h2>
-                <input type="mail" placeholder="Tu email">
-                <input type="password" placeholder="Elegí tu contraseña">
-                <p>La contraseña debe tener al menos 8 caracteres alfanuméricos y un simbolo.</p>
-                <input type="checkbox"> 
-                <p>Estoy de acuerdo con los Términos y Condiciones.</p>
-                <button>Registrarme</button>
-            </article>
 
-            <article>
-                <div>
-                    <img src="/img/ilus-viajero-01.png" alt="iliustración de un joven viajero sonriente sosteniendo una valija con la ciudad de fondo">
-                </div>
-            </article>
         </section>
     </main>
 
@@ -193,38 +172,40 @@
 
                 <ul class="footer__iconos-rrss">
                     <li><a href="https://www.facebook.com" target="blank">
-                        <img src="/img/fb.png" alt="logo facebook">
-                    </a></li>
+                            <img src="/img/fb.png" alt="logo facebook">
+                        </a></li>
                     <li><a href="https://www.instagram.com" target="blank">
-                        <img src="/img/inst.png" alt="logo instagram">
-                    </a></li>
+                            <img src="/img/inst.png" alt="logo instagram">
+                        </a></li>
                     <li><a href="https://www.tiktok.com" target="blank">
-                        <img src="/img/tik.png" alt="logo tiktok">
-                    </a></li>   
+                            <img src="/img/tik.png" alt="logo tiktok">
+                        </a></li>
                     <li><a href="https://www.twitter.com" target="blank">
-                        <img src="/img/tw.png" alt="logo twitter">
-                    </a></li>
+                            <img src="/img/tw.png" alt="logo twitter">
+                        </a></li>
                 </ul>
 
             </div>
-                
+
             <div class="footer__suscriptores">
                 <h3 class="footer__titulos">¡Recibí todas nuestras novedades!</h3>
-                <form action="suscriptores"  class="footer__formsuscripcion">
+                <form action="suscriptores" class="footer__formsuscripcion">
                     <input type="email" placeholder="Ingresá tu email" class="footer__formsuscripcion__email">
-                    <input type="checkbox" class="footer__formsuscripcion__checkbox"><p class="footer__formsuscripcion__acuerdo">Estoy de acuerdo con los <a href=""></a>Términos y Condiciones.</p>
-                    <button class="footer__formsuscripcion__boton"> Suscribirme</button>    
+                    <input type="checkbox" class="footer__formsuscripcion__checkbox">
+                    <p class="footer__formsuscripcion__acuerdo">Estoy de acuerdo con los <a href=""></a>Términos y
+                        Condiciones.</p>
+                    <button class="footer__formsuscripcion__boton"> Suscribirme</button>
                 </form>
             </div>
 
-            <div class="footer__index"-footer"">
+            <div class="footer__index">
                 <nav>
                     <ul class="footer__index__menu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li> <a href="./pages/explorar.html">Explorá</a></li>
-                        <li><a href="./pages/vuelos.html">Vuelos </a></li>
-                        <li><a href="./pages/hoteles.html">Hoteles </a></li>
-                        <li><a href="./pages/contacto.html">Contacto </a></li>            
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="./filtros.html">Explorá</a></li>
+                        <li><a href="./vuelos.html">Vuelos </a></li>
+                        <li><a href="./hoteles.html">Hoteles </a></li>
+                        <li><a href="./contacto.html">Contacto </a></li>
                     </ul>
                 </nav>
             </div>
@@ -235,17 +216,21 @@
                         <li>Privacidad</li>
                         <li>Términos</li>
                         <li>Preguntas frecuentes</li>
-                        <li>Centro de ayuda</li>            
+                        <li>Centro de ayuda</li>
                     </ul>
                 </nav>
             </div>
-        </div>    
+        </div>
 
         <div class="footer__siteinfo">
-            <p>Diseñado por<a href="www.agencialol.com.ar"> LOL Agencia</a> · Wanderlust® 2023 Todos los derechos reservados.</p>
+            <p>Diseñado por<a href="www.agencialol.com.ar"> LOL Agencia</a> · Wanderlust® 2023 Todos los derechos
+                reservados.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

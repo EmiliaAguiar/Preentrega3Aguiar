@@ -14,7 +14,7 @@
     <header> 
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <img src="./img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
+                <img src="../img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -47,70 +47,24 @@
 </header>
 
     <main>
+
+
         <section>
             <article>
-                <div>
-                    <img src="/img/banner-hotel.jpg" alt="mujer parada de espaldas conteplando las montañas al amanecer">
-                    <h1>Hoteles</h1>
-                    <h2>¿Qué clase de alojamientos es el adecuado para vos?</h2>
+                <div class="banner-princ--hoteles">
+                    <h1 class="titulo-paginas">Hoteles</h1>
                 </div>
+                <h2 class="banner-princ__parrafo--pages">¿Qué clase de alojamientos es el adecuado para vos?</h2>
             </article>
         </section>
 
-        <section>
-            <article>
-                <div>
-                    <h3>Bed & Breakfast</h3>
-                    <p>Tipo de alojamiento sencillo en una casa o residencia privada de entre cuatro y once habitaciones, que ofrecen alojamiento barato y un desayuno.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Hotel Boutique</h3>
-                    <p>Hotel pequeño, con carácter propio y ambiente íntimo. Suelen estar situados en los barrios más dinámicos de las grandes ciudades.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Resort de lujo</h3>
-                    <p>Hotel que cuenta con una amplia variedad de servicios de alta calidad, suites de lujo, gimnasios, spas, restaurantes de primera clase.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Hosterías y aparts</h3>
-                    <p>Suelen contar con pocas habitaciones y habitualmente son atendidos por sus propios dueños. Por lo general, cuentan con cocina dentro de la habitación.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Departamentos</h3>
-                    <p>Establecimientos turísticos integrados en bloques de edificios destinados exclusivamente a prestar un servicio de alojamiento a corto plazo.</p>
-                </div>
-            </article>
-
-            <article>
-                <div>
-                    <h3>Posadas</h3>
-                    <p>Usualmente están ubicadas en rutas lejos de las ciudades, poseen pocas habitaciones y brindan servicios básicos.</p>
-                </div>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <div class="hoteles">
-                    <input type="search"? placeholder="¿A qué ciudad viajás?" style="width:20%">
-
-                    <p>Ingreso</p><input type="datetime" placeholder="08/06/2023" min="08/06/2023" max="31/12/2024">
-
-                    <p>Salida</p><input type="datetime" placeholder="09/06/2023" min="09/06/2023" max="31/12/2024">
-
-                    <select name="hoteles" id="clase-de-hoteles" aria-placeholder="¿Qué tipo de alojamiento preferís">
+ 
+        <div class="buscador-vuelos">
+                <div class="filtros-hoteles">
+                    <input  class="filtros-hoteles__ciudad"type="search"? placeholder="¿A qué ciudad viajás?">
+                    <p class="filtros-hoteles__fecha">Ingreso</p><input type="datetime" placeholder="08/06/2023" min="08/06/2023" max="31/12/2024">
+                    <p class="filtros-hoteles__fecha">Salida</p><input type="datetime" placeholder="09/06/2023" min="09/06/2023" max="31/12/2024">
+                    <select class="filtros-hoteles__dropdown" name="hoteles" id="clase-de-hoteles" aria-placeholder="¿Qué tipo de alojamiento preferís">
                     <option value="bed">Bed&Breakfast</option>
                     <option value="boutuque">Hotel Boutique</option>
                     <option value="resort">Resort de lujo</option>
@@ -118,80 +72,78 @@
                     <option value="departamentos">Departamentos</option>
                     <option value="posadas">Posadas</option>
                     </select>
-                    <hr>
                 </div>
             </article>
         </section>
-
-        <section>
-            <article>
-                <div>
-                    <h2>Guardá tus hoteles favoritos</h2>
-                </div>
-            </article>
-
-            <article>
-                <img src="/img/holiday-inn.png" alt="fachada holiday inn london">
-                <h3>Holiday Inn London - Oxford Circus, an IHG hotel</h3>
-            </article>
-
-            <article>
-                <img src="/img/durrants-hotel.png" alt="fachada del hotel durrant">
-                <h3>Durrants Hotel London</h3>
-            </article>
-
-            <article>
-                <img src="/img/yha-london.jpeg" alt="frente del hotel yha london oxford street">
-                <h3>YHA London Oxford Street Hostel</h3>
-            </article>
-
-            <article>
-                <img src="/img/tottenham-london.jpeg" alt="vista desde la terraza de la explorar-ciudad">
-                <h3>Tottenham Flats by DC London Rooms</h3>
-                <p>Restaurante consolidado de cocina judía selecta con platos clásicos.</p>
-            </article>
-
-            <article>
-                <img src="/img/safestay-london.jpeg" alt="frente del hotel safestay london">
-                <h3>Safestay London Elephant & Castle</h3>
-                <p>Restaurante informal de cocina romana tradicional.</p>
-            </article>
-
-            <article>
-                <img src="/img/kensington-london.jpeg" alt="frente del hotel kensington london">
-                <h3>Safestay London Kensington Holland Park</h3>
-                <p>Local alegre de platos italianos tradicionales y terraza llena de plantas.</p>
-            </article>
-        </section>
-
-        <section>
-            <article>
-                <div>
-                    <a href="https://www.google.com/maps/search/Restaurantes/@41.8992423,12.4509809,14z?entry=ttu" target="blank"> Ver en el mapa</a>
-                </div>
-    
-                <div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d20473.350467378223!2d-0.13974824492198493!3d51.51874580681385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHoteles!5e0!3m2!1ses!2sar!4v1685980002968!5m2!1ses!2sar" width="400" height="850" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </article>
-        </section>
+        <hr>
         
         <section>
             <article>
-                <h2>Creá tu usuario y guardá tu itinerario</h2>
-                <input type="mail" placeholder="Tu email">
-                <input type="password" placeholder="Elegí tu contraseña">
-                <p>La contraseña debe tener al menos 8 caracteres alfanuméricos y un simbolo.</p>
-                <input type="checkbox"> 
-                <p>Estoy de acuerdo con los Términos y Condiciones.</p>
-                <button>Registrarme</button>
-            </article>
-
-            <article>
                 <div>
-                    <img src="/img/ilus-viajero-01.png" alt="iliustración de un joven viajero sonriente sosteniendo una valija con la ciudad de fondo">
+                    <h2 class="subtitulo-secciones">Guardá tus hoteles favoritos</h2>
                 </div>
             </article>
+
+            <div class="contenedor-hoteles" >
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña" src="/img/holiday-inn.png" alt="fachada holiday inn london">
+                <h3 class="reseñas__tarjetas__user-opinion">Holiday Inn London - Oxford Circus</h3>
+            </article>
+
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña"src="/img/durrants-hotel.png" alt="fachada del hotel durrant">
+                <h3 class="reseñas__tarjetas__user-opinion">Durrants Hotel London</h3>
+            </article>
+
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña" src="/img/yha-london.jpeg" alt="frente del hotel yha london oxford street">
+                <h3 class="reseñas__tarjetas__user-opinion">YHA London Oxford Street Hostel</h3>
+            </article>
+            </article>
+
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña"src="/img/tottenham-london.jpeg" alt="vista desde la terraza de la explorar-ciudad">
+                <h3 class="reseñas__tarjetas__user-opinion">Tottenham Flats by DC London Room</h3>
+            </article>
+            </article>
+
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña"src="/img/safestay-london.jpeg" alt="frente del hotel safestay london">
+                <h3 class="reseñas__tarjetas__user-opinion">Safestay London Elephant & Castle</h3>
+            </article>
+            </article>
+
+            <article class="hoteles-tarjetas">
+                <img class="reseñas__tarjetas__imgreseña"src="/img/kensington-london.jpeg" alt="frente del hotel kensington london">
+                <h3 class="reseñas__tarjetas__user-opinion">Safestay London Kensington Holland Park</h3>
+            </article>
+            </article>
+
+    </div>
+
+    <button class="boton">Ver en el mapa</button>
+
+</div>
+
+      
+      <section class="registro">
+            <div class="registro__ilustracion">
+                <img src="/img/ilus-viajero-01.png"
+                    alt="iliustración de un joven viajero sonriente sosteniendo una valija con la ciudad de fondo">
+            </div>
+            <div class="registro__textos">
+                <h2 class="registro__textos__titulo"> Creá tu usuario y guardá tu itinerario</h2>
+                <input class="footer__formsuscripcion__email" type="mail" placeholder="Tu email">
+                <input class="footer__formsuscripcion__email" type="password" placeholder="Elegí tu contraseña">
+                <p class="registro__textos__parrafo">La contraseña debe tener al menos 8 caracteres alfanuméricos y un
+                    simbolo.</p>
+                <input class="footer__formsuscripcion__checkbox--explorar" type="checkbox">
+                <p class="footer__formsuscripcion__acuerdo--explorar">Estoy de acuerdo con los Términos y Condiciones.
+                </p>
+                <button class="footer__formsuscripcion__boton">Registrarme</button>
+            </div>
+
+
         </section>
     </main>
 
@@ -226,14 +178,14 @@
                 </form>
             </div>
 
-            <div class="footer__index"-footer"">
+            <div class="footer__index">
                 <nav>
                     <ul class="footer__index__menu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li> <a href="./pages/explorar.html">Explorá</a></li>
-                        <li><a href="./pages/vuelos.html">Vuelos </a></li>
-                        <li><a href="./pages/hoteles.html">Hoteles </a></li>
-                        <li><a href="./pages/contacto.html">Contacto </a></li>            
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li> <a href="./explorar.html">Explorá</a></li>
+                        <li><a href="./vuelos.html">Vuelos </a></li>
+                        <li><a href="./hoteles.html">Hoteles </a></li>
+                        <li><a href="./contacto.html">Contacto </a></li>             
                     </ul>
                 </nav>
             </div>
