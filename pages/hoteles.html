@@ -5,22 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="./img/favicon-wanderelus.png" type="image/x-icon">
+
+
     <title>Encontrá el alojamiento perfecto para tu próximo viaje</title>
-    <meta name="description" content="Hoteles de lujo, posadas, hostels, encontrá el alojamiento para tu viaje, adaptado a tu presupuesto.">
+    <meta name="description"
+        content="Hoteles de lujo, posadas, hostels, encontrá el alojamiento para tu viaje, adaptado a tu presupuesto.">
     <meta name="keywords" content="Hotel, all inclusive, hostel, posada, hotel barato, hotel con vistas, hotel barato">
 
 
 </head>
 
 <body>
-    <header> 
+    <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <img src="../img/logowanderlust.png" alt="Logo Wanderlust" class="logo">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -28,27 +34,27 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./explorar.html">Explorar</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./vuelos.html">Vuelos</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./hoteles.html">Hoteles</a>
                     </li>
-    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
-        </div>
-    </nav>
-</header>
+            </div>
+        </nav>
+    </header>
 
     <main>
 
@@ -62,75 +68,84 @@
             </article>
         </section>
 
- 
+
         <div class="buscador-vuelos">
-                <div class="filtros-hoteles">
-                    <input  class="filtros-hoteles__ciudad"type="search"? placeholder="¿A qué ciudad viajás?">
-                    <p class="filtros-hoteles__fecha">Ingreso</p><input type="datetime" placeholder="08/06/2023" min="08/06/2023" max="31/12/2024">
-                    <p class="filtros-hoteles__fecha">Salida</p><input type="datetime" placeholder="09/06/2023" min="09/06/2023" max="31/12/2024">
-                    <select class="filtros-hoteles__dropdown" name="hoteles" id="clase-de-hoteles" aria-placeholder="¿Qué tipo de alojamiento preferís">
+            <div class="filtros-hoteles">
+                <input class="filtros-hoteles__ciudad" type="search" ? placeholder="¿A qué ciudad viajás?">
+                <p class="filtros-hoteles__fecha">Ingreso</p><input type="datetime" placeholder="08/06/2023"
+                    min="08/06/2023" max="31/12/2024">
+                <p class="filtros-hoteles__fecha">Salida</p><input type="datetime" placeholder="09/06/2023"
+                    min="09/06/2023" max="31/12/2024">
+                <select class="filtros-hoteles__dropdown" name="hoteles" id="clase-de-hoteles"
+                    aria-placeholder="¿Qué tipo de alojamiento preferís">
                     <option value="bed">Bed&Breakfast</option>
                     <option value="boutuque">Hotel Boutique</option>
                     <option value="resort">Resort de lujo</option>
                     <option value="aparts">Hosterías y aparts</option>
                     <option value="departamentos">Departamentos</option>
                     <option value="posadas">Posadas</option>
-                    </select>
+                </select>
+            </div>
+            </article>
+            </section>
+            <hr>
+
+            <section>
+                <article>
+                    <div>
+                        <h2 class="subtitulo-secciones">Guardá tus hoteles favoritos</h2>
+                    </div>
+                </article>
+
+                <div class="contenedor-hoteles">
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/holiday-inn.png"
+                            alt="fachada holiday inn london">
+                        <h3 class="reseñas__tarjetas__user-opinion">Holiday Inn London - Oxford Circus</h3>
+                    </article>
+
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/durrants-hotel.png"
+                            alt="fachada del hotel durrant">
+                        <h3 class="reseñas__tarjetas__user-opinion">Durrants Hotel London</h3>
+                    </article>
+
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/yha-london.jpeg"
+                            alt="frente del hotel yha london oxford street">
+                        <h3 class="reseñas__tarjetas__user-opinion">YHA London Oxford Street Hostel</h3>
+                    </article>
+                    </article>
+
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/tottenham-london.jpeg"
+                            alt="vista desde la terraza de la explorar-ciudad">
+                        <h3 class="reseñas__tarjetas__user-opinion">Tottenham Flats by DC London Room</h3>
+                    </article>
+                    </article>
+
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/safestay-london.jpeg"
+                            alt="frente del hotel safestay london">
+                        <h3 class="reseñas__tarjetas__user-opinion">Safestay London Elephant & Castle</h3>
+                    </article>
+                    </article>
+
+                    <article class="hoteles-tarjetas">
+                        <img class="reseñas__tarjetas__imgreseña" src="/img/kensington-london.jpeg"
+                            alt="frente del hotel kensington london">
+                        <h3 class="reseñas__tarjetas__user-opinion">Safestay London Kensington Holland Park</h3>
+                    </article>
+                    </article>
+
                 </div>
-            </article>
-        </section>
-        <hr>
-        
-        <section>
-            <article>
-                <div>
-                    <h2 class="subtitulo-secciones">Guardá tus hoteles favoritos</h2>
-                </div>
-            </article>
 
-            <div class="contenedor-hoteles" >
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña" src="/img/holiday-inn.png" alt="fachada holiday inn london">
-                <h3 class="reseñas__tarjetas__user-opinion">Holiday Inn London - Oxford Circus</h3>
-            </article>
+                <button class="boton">Ver en el mapa</button>
 
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña"src="/img/durrants-hotel.png" alt="fachada del hotel durrant">
-                <h3 class="reseñas__tarjetas__user-opinion">Durrants Hotel London</h3>
-            </article>
+        </div>
 
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña" src="/img/yha-london.jpeg" alt="frente del hotel yha london oxford street">
-                <h3 class="reseñas__tarjetas__user-opinion">YHA London Oxford Street Hostel</h3>
-            </article>
-            </article>
 
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña"src="/img/tottenham-london.jpeg" alt="vista desde la terraza de la explorar-ciudad">
-                <h3 class="reseñas__tarjetas__user-opinion">Tottenham Flats by DC London Room</h3>
-            </article>
-            </article>
-
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña"src="/img/safestay-london.jpeg" alt="frente del hotel safestay london">
-                <h3 class="reseñas__tarjetas__user-opinion">Safestay London Elephant & Castle</h3>
-            </article>
-            </article>
-
-            <article class="hoteles-tarjetas">
-                <img class="reseñas__tarjetas__imgreseña"src="/img/kensington-london.jpeg" alt="frente del hotel kensington london">
-                <h3 class="reseñas__tarjetas__user-opinion">Safestay London Kensington Holland Park</h3>
-            </article>
-            </article>
-
-    </div>
-
-    <button class="boton">Ver en el mapa</button>
-
-</div>
-
-      
-      <section class="registro">
+        <section class="registro">
             <div class="registro__ilustracion">
                 <img src="/img/ilus-viajero-01.png"
                     alt="iliustración de un joven viajero sonriente sosteniendo una valija con la ciudad de fondo">
@@ -158,27 +173,29 @@
 
                 <ul class="footer__iconos-rrss">
                     <li><a href="https://www.facebook.com" target="blank">
-                        <img src="/img/fb.png" alt="logo facebook">
-                    </a></li>
+                            <img src="/img/fb.png" alt="logo facebook">
+                        </a></li>
                     <li><a href="https://www.instagram.com" target="blank">
-                        <img src="/img/inst.png" alt="logo instagram">
-                    </a></li>
+                            <img src="/img/inst.png" alt="logo instagram">
+                        </a></li>
                     <li><a href="https://www.tiktok.com" target="blank">
-                        <img src="/img/tik.png" alt="logo tiktok">
-                    </a></li>   
+                            <img src="/img/tik.png" alt="logo tiktok">
+                        </a></li>
                     <li><a href="https://www.twitter.com" target="blank">
-                        <img src="/img/tw.png" alt="logo twitter">
-                    </a></li>
+                            <img src="/img/tw.png" alt="logo twitter">
+                        </a></li>
                 </ul>
 
             </div>
-                
+
             <div class="footer__suscriptores">
                 <h3 class="footer__titulos">¡Recibí todas nuestras novedades!</h3>
-                <form action="suscriptores"  class="footer__formsuscripcion">
+                <form action="suscriptores" class="footer__formsuscripcion">
                     <input type="email" placeholder="Ingresá tu email" class="footer__formsuscripcion__email">
-                    <input type="checkbox" class="footer__formsuscripcion__checkbox"><p class="footer__formsuscripcion__acuerdo">Estoy de acuerdo con los <a href=""></a>Términos y Condiciones.</p>
-                    <button class="footer__formsuscripcion__boton"> Suscribirme</button>    
+                    <input type="checkbox" class="footer__formsuscripcion__checkbox">
+                    <p class="footer__formsuscripcion__acuerdo">Estoy de acuerdo con los <a href=""></a>Términos y
+                        Condiciones.</p>
+                    <button class="footer__formsuscripcion__boton"> Suscribirme</button>
                 </form>
             </div>
 
@@ -189,7 +206,7 @@
                         <li> <a href="./explorar.html">Explorá</a></li>
                         <li><a href="./vuelos.html">Vuelos </a></li>
                         <li><a href="./hoteles.html">Hoteles </a></li>
-                        <li><a href="./contacto.html">Contacto </a></li>             
+                        <li><a href="./contacto.html">Contacto </a></li>
                     </ul>
                 </nav>
             </div>
@@ -200,17 +217,21 @@
                         <li>Privacidad</li>
                         <li>Términos</li>
                         <li>Preguntas frecuentes</li>
-                        <li>Centro de ayuda</li>            
+                        <li>Centro de ayuda</li>
                     </ul>
                 </nav>
             </div>
-        </div>    
+        </div>
 
         <div class="footer__siteinfo">
-            <p>Diseñado por<a href="www.agencialol.com.ar"> LOL Agencia</a> · Wanderlust® 2023 Todos los derechos reservados.</p>
+            <p>Diseñado por<a href="www.agencialol.com.ar"> LOL Agencia</a> · Wanderlust® 2023 Todos los derechos
+                reservados.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
