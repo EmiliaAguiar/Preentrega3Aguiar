@@ -18,7 +18,7 @@
     font-family: $ff-titulos;
     font-weight: 600;
     font-size: 1.8rem;
-   
+
   }
 
   &__parrafo {
@@ -64,13 +64,6 @@
     height: 50%;
     object-fit: fill;
     border-radius: 70px;
-    animation-name: growAndShrink;
-    animation-duration: 3s;
-    animation-delay: 1s;
-  animation-iteration-count: 2;
-  animation-direction: normal;
-  animation-fill-mode: both;
-  
   }
 
   &__parrafo {
@@ -158,7 +151,7 @@
         width: 102%;
         background-color: rgb(217, 233, 247);
       }
-     }
+    }
 
     &__imagen {
       width: 100%;
@@ -403,7 +396,7 @@
 
     &__imagen {
       flex-direction: column;
-      max-width: 50%;
+      max-width: 70%;
       @include centrar-elemento;
       flex-shrink: 1;
       padding: 2%;
@@ -535,7 +528,7 @@
     font-size: 1.3rem;
   }
 
-  
+
   .reseñas__tarjetas {
     @include centrar-elemento;
     margin-top: 8%;
@@ -633,7 +626,7 @@
       flex-flow: row nowrap;
       justify-content: flex-start;
       align-items: flex-start;
-    
+
     }
 
     &__imagen {
@@ -747,7 +740,7 @@
     font-size: 1.3rem;
   }
 
-  
+
   .reseñas__tarjetas {
     @include centrar-elemento;
     display: grid;
