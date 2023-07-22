@@ -328,7 +328,6 @@ body {
   border-radius: 5px;
   box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
 }
-
 .boton:hover {
   font-weight: 600;
   font-size: 1rem;
@@ -1502,7 +1501,7 @@ body {
 }
 /* Banner */
 .banner-princ--vuelos {
-  background-image: url(/img/banner-vuelos.jpg);
+  background-image: url(./img/banner-vuelos.jpg);
   background-attachment: fixed;
   height: 350px;
   background-size: cover;

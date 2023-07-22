@@ -3,7 +3,7 @@
 .banner-princ {
 
     &--vuelos {
-        background-image: url(/img/banner-vuelos.jpg);
+        background-image: url(./img/banner-vuelos.jpg);
         @include banner-secciones;
         background-position: 100% 50%;
 
@@ -382,13 +382,13 @@
         grid-row-gap: 6%;
 
         &__idayvuelta {
-            width: 70%; 
+            width: 70%;
         }
-    
+
         &__ida {
             width: 70%;
         }
-    
+
         &__vuelta {
             width: 70%;
         }

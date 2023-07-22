@@ -17,10 +17,11 @@
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.065);
-}
-.boton:hover {
+
+    &:hover {
     font-weight: 600;
     font-size: 1rem;
     color:rgb(180, 226, 249);
     background-color:$c-secundario-v;
+} 
 }
